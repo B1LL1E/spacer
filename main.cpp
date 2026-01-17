@@ -29,7 +29,7 @@ int main(){
 	SDL_Init(SDL_INIT_VIDEO);
 	
 	//tworzenie okna
-	SDL_Window* window = SDL_CreateWindow("Spacer", 100,100,800,600, SDL_WINDOW_SHOWN);
+	SDL_Window* window = SDL_CreateWindow("Spacer", 100,100,1600,900, SDL_WINDOW_SHOWN);
 
 	//tworzenie malarza ktory maluje    window   powyzej
 	SDL_Renderer* renderer = SDL_CreateRenderer(window, -1,0);
@@ -47,8 +47,8 @@ int main(){
 	//pozycja ekranu
 	//
 	Walker* gracz = new Walker;
-	gracz -> x = 400;
-	gracz -> y = 300;
+	gracz -> x = 800;
+	gracz -> y = 450;
 	gracz -> los = rand() % 4;
 
 	
